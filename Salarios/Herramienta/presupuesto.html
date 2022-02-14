@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Presupuesto</title>
+</head>
+<body >
+    <h1 align = center>Presupuesto</h1>
+    <div id="Salario">
+        <label for="Salario">Ingresa tu salario</label>
+        <input id="SalarioIngresado" type="number">
+    
+    </div>
+    <div id="Deducciones">
+        <label for="DeduccionesSalario">Ingresa el porcentaje de deducciones</label>
+        <input id="DeduccionesSalario" type="number">
+        
+    </div>
+    <div id="Arriendo">
+        <label for="ArriendoIngresado">Ingresa el monto de arriendo o cuota mensual</label>
+        <input id="ArriendoIngresado" type="number">
+        
+    </div>
+    <div id="Servicios">
+        <label for="ServiciosIngresado">Ingresa el monto de todos los servicios mensuales</label>
+        <input id="ServiciosIngresado" type="number">
+        
+    </div>
+    <div id="Transporte">
+        <label for="TransporteIngresado">Ingresa el monto que gastas en transporte mensualmente</label>
+        <input id="TransporteIngresado" type="number">
+        
+    </div>
+    <button type="button" onclick="almacenarValores()">Guardar</button>
+    <div id="Resultados">
+        <p id="ResultadoSalario"></p>
+        <p id="SalarioConDeduccionFinal"></p>
+        <p id="ResultadoArriendo"></p>
+        <p id="ResultadoServicios"></p>
+        <p id="ResultadoTransporte"></p>
+    </div>
+    <div id="Consejos">
+        <p id="SalarioRestante"></p>
+        <p id="AhorroRecomendado"></p>
+    </div>
+    <script src="./presupuesto.js">
+
+    </script>
+    <link rel="stylesheet" type="text/css" href="./styles.css" media="screen" />
+</body>
+</html>

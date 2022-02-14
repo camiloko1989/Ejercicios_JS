@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porcentajes y Descuentos</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Porcentajes y Descuentos
+        </h1>
+        <p>Este es el segundo taller de JS </p>
+        
+    </header>
+    <section>
+        <h2>Calcula el precio de tus productos</h2>
+        <form>
+            <label for="InputPrecio">Escribe el precio de tu producto: </label>
+            <input id="InputPrecio" type="number" />
+
+            <!--<label for="InputDescuento">Escribe el descuento de tu producto: </label>
+            <input id="InputDescuento" type="number" /> -->
+
+            <label for="EligeCupon">Elige el Cupón que quieras: </label>
+            <select name="EligeCupon" id="EligeCupon">
+                <option value="cuponNavidad">Cupón de Navidad (15%)</option>
+                <option value="cuponPrimeraVez">Cupón de Primera Compra (20%)</option>
+                <option value="cuponFidelidad">Cupón de Fidelidad (25%)</option>
+            </select>
+            <button type="button" onclick="calculoDePrecio()">
+                Calcular precio con descuento
+            </button>
+
+            <p id="PrecioResultado"></p>
+        </form>
+    </section>
+    <script src="./descuentos.js">    </script>
+</body>
+</html>
